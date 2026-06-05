@@ -1,7 +1,7 @@
 CXX = g++
 GTEST_INCLUDE = -I/opt/homebrew/include
 GTEST_LIB_DIR = -L/opt/homebrew/lib
-CXXFLAGS = -std=c++17 -Werror -Wpedantic -Wall $(GTEST_INCLUDE)
+CXXFLAGS = -std=c++17 -Werror -Wpedantic -Wall $(GTEST_INCLUDE) $(CXX_EXTRA_FLAGS)
 CXXFLAGS_R = $(CXXFLAGS) -O3 -DNDEBUG
 CXXFLAGS_D = $(CXXFLAGS) -g  -DDEBUG
 GTEST_LIBS = -lgtest -lgtest_main -lpthread $(GTEST_LIB_DIR)
