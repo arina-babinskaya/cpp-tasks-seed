@@ -10,15 +10,15 @@ void bubble_sort(Iterator begin, Iterator end)
     if (begin == end) return;
 
     bool swapped = true;
-    while (swapped)
+    while (swapped) 
     {
         swapped = false;
         Iterator current = begin;
         Iterator next = std::next(current);
 
-        while (next != end)
+        while (next != end) 
         {
-            if (*next < *current)
+            if (*next < *current) 
             {
                 using std::swap;
                 swap(*current, *next);
@@ -27,7 +27,7 @@ void bubble_sort(Iterator begin, Iterator end)
             current = next;
             ++next;
         }
-        --end;
+        --end; 
     }
 }
 

@@ -55,7 +55,7 @@ std::vector<uint8_t> base85::encode(std::vector<uint8_t> const &bytes)
             buf[j] = alphabet[value % 85];
             value /= 85;
         }
-
+        
         size_t out_len = (chunk < 4) ? chunk + 1 : 5;
         out.insert(out.end(), buf, buf + out_len);
     }

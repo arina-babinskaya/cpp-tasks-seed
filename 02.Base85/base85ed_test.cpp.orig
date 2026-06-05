@@ -63,8 +63,7 @@ static std::vector<uint8_t> random_bytes(size_t n)
 
 TEST(Base85RoundTrip, RandomDataVariousSizes)
 {
-    std::vector<size_t> sizes =
-    {
+    std::vector<size_t> sizes = {
         0, 1, 2, 3, 4, 5, 10, 50, 100, 256, 1023, 4096
     };
 
